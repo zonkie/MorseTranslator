@@ -3,10 +3,14 @@ package de.ardunoid.morsetranslator;
 import android.R.string;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.text.Editable;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -250,4 +254,26 @@ Log.d("test","test");
 		}
 
 	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.menu, menu);
+	    return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle item selection
+	    switch (item.getItemId()) {
+	        case R.id.show_alphabet:
+	            Intent intent = new Intent(MorseTranslatorActivity.this, MorseAlphabetActivity.class);
+	            startActivity(intent);
+	            return true;         
+
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
+	}	
+
 }

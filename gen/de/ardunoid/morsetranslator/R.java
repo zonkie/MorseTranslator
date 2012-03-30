@@ -14,15 +14,94 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int button1=0x7f050001;
-        public static final int button2=0x7f050002;
-        public static final int editText1=0x7f050000;
+        public static final int button1=0x7f060001;
+        public static final int button2=0x7f060002;
+        public static final int editText1=0x7f060000;
+        public static final int show_alphabet=0x7f060027;
+        public static final int text0=0x7f06001d;
+        public static final int text1=0x7f06001e;
+        public static final int text2=0x7f06001f;
+        public static final int text3=0x7f060020;
+        public static final int text4=0x7f060021;
+        public static final int text5=0x7f060022;
+        public static final int text6=0x7f060023;
+        public static final int text7=0x7f060024;
+        public static final int text8=0x7f060025;
+        public static final int text9=0x7f060026;
+        public static final int textA=0x7f060003;
+        public static final int textB=0x7f060004;
+        public static final int textC=0x7f060005;
+        public static final int textD=0x7f060006;
+        public static final int textE=0x7f060007;
+        public static final int textF=0x7f060008;
+        public static final int textG=0x7f060009;
+        public static final int textH=0x7f06000a;
+        public static final int textI=0x7f06000b;
+        public static final int textJ=0x7f06000c;
+        public static final int textK=0x7f06000d;
+        public static final int textL=0x7f06000e;
+        public static final int textM=0x7f06000f;
+        public static final int textN=0x7f060010;
+        public static final int textO=0x7f060011;
+        public static final int textP=0x7f060012;
+        public static final int textQ=0x7f060013;
+        public static final int textR=0x7f060014;
+        public static final int textS=0x7f060015;
+        public static final int textT=0x7f060016;
+        public static final int textU=0x7f060017;
+        public static final int textV=0x7f060018;
+        public static final int textW=0x7f060019;
+        public static final int textX=0x7f06001a;
+        public static final int textY=0x7f06001b;
+        public static final int textZ=0x7f06001c;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int morsealphabet=0x7f030001;
+    }
+    public static final class menu {
+        public static final int menu=0x7f050000;
     }
     public static final class string {
+        public static final int A=0x7f040004;
+        public static final int B=0x7f040005;
+        public static final int C=0x7f040006;
+        public static final int D=0x7f040007;
+        public static final int E=0x7f040008;
+        public static final int F=0x7f040009;
+        public static final int G=0x7f04000a;
+        public static final int H=0x7f04000b;
+        public static final int I=0x7f04000c;
+        public static final int J=0x7f04000d;
+        public static final int K=0x7f04000e;
+        public static final int L=0x7f04000f;
+        public static final int M=0x7f040010;
+        public static final int N=0x7f040011;
+        public static final int O=0x7f040012;
+        public static final int P=0x7f040013;
+        public static final int Q=0x7f040014;
+        public static final int R=0x7f040015;
+        public static final int S=0x7f040016;
+        public static final int T=0x7f040017;
+        public static final int U=0x7f040018;
+        public static final int V=0x7f040019;
+        public static final int W=0x7f04001a;
+        public static final int X=0x7f04001b;
+        public static final int Y=0x7f04001c;
+        public static final int Z=0x7f04001d;
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
+        public static final int morsealphabet=0x7f040003;
+        public static final int n0=0x7f04001e;
+        public static final int n1=0x7f04001f;
+        public static final int n2=0x7f040020;
+        public static final int n3=0x7f040021;
+        public static final int n4=0x7f040022;
+        public static final int n5=0x7f040023;
+        public static final int n6=0x7f040024;
+        public static final int n7=0x7f040025;
+        public static final int n8=0x7f040026;
+        public static final int n9=0x7f040027;
+        public static final int welcome=0x7f040002;
     }
 }
