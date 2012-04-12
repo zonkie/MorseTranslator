@@ -1,5 +1,9 @@
 package de.ardunoid.morsetranslator;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import android.R.string;
 import android.app.Activity;
 import android.content.Context;
@@ -20,7 +24,7 @@ public class MorseTranslatorActivity extends Activity {
 	static Long dit = (long) 100; // 300 ms
 	static Long dah = (long) 3 * dit;
 	static Long charbreak = (long)  3 * dit;
-	static Long symbolbreak = (long)  dit;
+	static Long symbolbreak = (long) 2 * dit;
 	static Long wordbreakbreak = (long) 3 * dah;
 
 	static long[] pattern_A = { 0, dit, symbolbreak, dah };
@@ -97,17 +101,17 @@ public class MorseTranslatorActivity extends Activity {
 	public void onClickTranslate(final View view) {
 
 		try {
-Log.d("test","test");
+			Log.d("test","test");
 			Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
 			EditText et = (EditText) findViewById(R.id.editText1);
 			String text = et.getText().toString();
-			// long[] pattern = {0} ;
+
 			Context context = getApplicationContext();
 			Toast toast = Toast.makeText(context, text, 50);
 			toast.show();
 
-
+			long[] finalpattern = {0,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5,30,5};
 			char[] singlechars = text.toCharArray();
 			Log.d("test",String.valueOf(singlechars.length));
 			for (char c : singlechars) {
@@ -274,6 +278,13 @@ Log.d("test","test");
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }
-	}	
+	}
+	
+	public long[] makeFinalpattern(int newvalue) {
+		
+		long[] returnarray = {};
+		Arrays.fill(returnarray, newvalue);
+		return returnarray;
+	}
 
 }
